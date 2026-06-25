@@ -1,0 +1,9 @@
+# Private source data — real internal team data, never publish
+*.xlsx
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store

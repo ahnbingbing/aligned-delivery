@@ -1,0 +1,23 @@
+{
+  "skill_name": "aligned-delivery",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm a new PM on a team of senior engineers who refuse to write a WBS because the work is too uncertain. How should I plan the first month?",
+      "expected_output": "Coaching answer using unexpectancy: spike sprints, raise short-term predictability, alignment over a fixed plan. Ties abstract principle to concrete moves (1-week spike sprints capped at ~10-20% of remaining time, break down to known points, half-day tickets for visibility, daily updates as an umbrella/protection for the team).",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Here's our last 12 sprints as a CSV (planned/added/completed story points). Is our productivity healthy?",
+      "expected_output": "Runs sprint_predictability.py on the CSV; reports scope/completion predictability, workload STDEV, RAG flags; leads with the leading indicator (scope predictability), distinguishes it from lagging completion numbers, and flags 'fake productivity' where completion looks green over broken scope predictability.",
+      "files": ["sprints.csv"]
+    },
+    {
+      "id": 3,
+      "prompt": "Our team shipped on time but morale is terrible and people work in silos. Help me design the next quarter's operating loops.",
+      "expected_output": "Uses proximity + ethical compass: reconciles the footprint (도, green delivery) against the operating state (기, heavy morale); proposes health check + 1:1 correction, role-wall breaking, retro/KPT cadence, guardrails. Designs the half-yearly diagnostic loop and minimal-interference cadence rather than copying a framework.",
+      "files": []
+    }
+  ]
+}
