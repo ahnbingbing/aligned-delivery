@@ -1,0 +1,11 @@
+{
+  "name": "aligned-delivery",
+  "description": "An agile operating + coaching skill for project/program managers and team leads. Coaches and interviews PMs; helps you lead, grow, and care for a team and manage up to stakeholders; diagnoses delivery health from sprint/Jira + DORA analytics (predictability, workload balance, fragmentation, lead/cycle time, throughput, flow efficiency, deployment frequency, change-failure rate, MTTR — even without story points); and forecasts completion dates probabilistically.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Yuri Ahn",
+    "email": "h.yura.a@gmail.com"
+  },
+  "homepage": "https://github.com/ahnbingbing/aligned-delivery",
+  "license": "MIT"
+}
