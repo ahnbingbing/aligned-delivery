@@ -3,6 +3,19 @@
 All notable changes to **Aligned Delivery** are documented here. Bilingual EN / KO.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 0.1.1
+
+Output hygiene: **chat answers are now plain text — no markdown markup** (`**bold**`,
+`#` headings), since a conversational reply is often read where markdown isn't rendered
+(chat bot, Telegram, mobile) and shows up as literal `**`/`#`. Rich markdown (tables, `#`,
+`**`) is **reserved for saved artifacts and contexts known to render it** — e.g. a
+health-check/sprint report written from `assets/*template.md`, where tables belong. Mirrors
+the sibling `life-reading` 0.1.1 plain-text fix. Enforced in `SKILL.md` (How to respond).
+
+출력 위생: **채팅 답변은 평문 — 마크다운(`**`·`#`) 금지** (봇/텔레그램/모바일 등 렌더링 안
+되는 곳에서 별표·샵이 그대로 보임). 표·`#`·굵게 같은 리치 마크다운은 **저장 산출물(.md
+리포트)·렌더링 보장된 곳에서만**. 형제 `life-reading` 0.1.1 평문 수정과 동일한 결.
+
 ## 0.1.0
 
 Initial build: an installable, bilingual (EN/KO) Claude skill that turns a belief-first

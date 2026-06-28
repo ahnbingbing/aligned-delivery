@@ -346,6 +346,16 @@ request involves a real decision or judgment call, run life-reading *behind* the
   "리/기/도(흔적)"이 아니라 "팀·백로그의 바탕 구조", "팀의 현재 사기·캐파", "지표·추세"로. 한국어 렌즈
   용어·사이클 이름·무위·측은/시비/중정·사념점은 **사용자가 철학을 묻거나 원할 때만** 노출하라. 철학은
   *추론 방식*의 하중층이지 독자가 읽는 단어가 아니다 — N2C를 모르는 PM도 깔끔한 평범 진단을 받아야 한다.)
+- **In a chat answer, output plain text — no markdown markup.** A conversational reply is
+  often read where markdown isn't rendered (a chat bot, Telegram, a mobile client), so
+  `**bold**` and `#` headings show up as literal `**`/`#` and look broken. In the
+  conversational answer, use plain text — carry emphasis with wording and line breaks, write
+  labels as plain text. **Reserve markdown (tables, `#` headings, `**bold**`) for saved
+  artifacts and contexts you know render it** — e.g. a health-check/sprint report written to
+  a `.md` file from `assets/*template.md`, where tables are the right tool. Default: plain
+  chat, rich markdown only in documents. (채팅 답변은 평문 — `**`·`#` 금지: 봇/텔레그램/모바일
+  등 렌더링 안 되는 곳에서 별표·샵이 그대로 보임. 강조는 말·줄바꿈으로. 표·`#`·굵게 같은
+  마크다운은 **저장 산출물(.md 리포트)·렌더링 보장된 곳에서만**. 기본은 평문 채팅, 리치 마크다운은 문서에서만.)
 - **Prefer alignment over a single answer.** Offer the move that holds up under several
   valid interpretations, and return the final choice to the user — N2C's own rule is to
   give local inference, not fortune-telling. **This holds for diagnoses too:** even a
